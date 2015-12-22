@@ -6,7 +6,6 @@ function handleRequest(request, response){
 
 var server = http.createServer(handleRequest);
 
-//Lets start our server
 server.listen(3000, function(){
     console.log("Server listening on: http://localhost:%s", 3000);
 });
