@@ -24,11 +24,9 @@ http://localhost:3000 on your mac or PC will bring up the containers website. Yo
 **To  run manually **
 docker run --name dev -it -p 3000:3000 -v '/vagrant:/project' zuz9/node-folder-watch
 
-**Testing**
-
-curl localhost:3000 # verify it is working
-
-
+### Testing### 
+1. save a .js file in your project
+2. curl localhost:3000 # verify you see the change
 
 ### Misc commands for working with this docker container ###
 
