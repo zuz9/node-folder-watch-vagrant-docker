@@ -1,15 +1,14 @@
-This project use the docker node image as the base for doing NodeJS development on local machine but running it in linux vm to make sure your dev enviornment is the same as other enviornments.
+This project use the docker node image as the base for doing NodeJS development on local machine but running it in linux vm to make sure your dev enviornment is the same as other enviornments for maximum consistency.  This vagrant file uses ubuntu 14.04 and my base dockerfile image hosted on dockerhub but you could easily modify to use your own image or your own dockerfile.  
 
-You must install vagrant https://www.vagrantup.com/
-
-"vagrant up" will start a docker container running supervisor watching for changes in your local (osx/pc) project.  
 
 ###Instructions###
 
+0. Make sure vagrant is installed https://www.vagrantup.com/
 1. Just copy this "Vagrantfile" in this project into your current project root.
 2. Make sure your package.json file has this "start": "supervisor server.js" * (see info below)
 3. Make sure your node project runs in port 3000
 4. In terminal cd to project root and type "vagrant up"
+5. Go to you mac or pc and type localhost:3000 in the browser
 
 ###Notes###
 
