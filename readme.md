@@ -6,10 +6,10 @@ You must install vagrant https://www.vagrantup.com/
 
 ###Instructions###
 
-1. Just copy this vagrant file in your current project root 
+1. Just copy this "Vagrantfile" in this project into your current project root.
 2. Make sure your package.json file has this "start": "supervisor server.js" * (see info below)
-3. your node project runs in port 3000
-
+3. Make sure your node project runs in port 3000
+4. In terminal cd to project root and type "vagrant up"
 
 ###Notes###
 
