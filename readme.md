@@ -13,6 +13,7 @@ curl localhost:3000 # verify it is working
 docker exec -it dev bash # enter container to see what is happening
 
 -- build and push to docker hub
+cd /vagrant
 docker build -t zuz9/node-forever .
 docker login --username zuz9 --email
 docker push zuz9/node-forever

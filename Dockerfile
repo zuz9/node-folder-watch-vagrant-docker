@@ -6,4 +6,4 @@ RUN mkdir /project
 WORKDIR /project
 COPY server.js /project/server.js
 RUN cd /project
-CMD forever -w server.js
+ENTRYPOINT forever -w server.js
