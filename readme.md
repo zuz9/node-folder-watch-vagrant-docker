@@ -5,14 +5,14 @@ This project use the docker node image as the base for doing NodeJS development 
 
 1. Make sure vagrant is installed https://www.vagrantup.com/
 2. Just copy this "Vagrantfile" in this project into your current project root.
-3. Make sure your package.json file has this "start": "supervisor server.js" * (see info below)
+3. Make sure your package.json file has this "start": "supervisor server.js" (see more info below)
 4. Make sure your node project runs in port 3000
 5. In terminal cd to project root and type "vagrant up"
 6. Go to you mac or pc and type localhost:3000 in the browser
 
 ###Notes###
 
-* step 3 above - this is important if you want it to monitor file changes for local development. You save you file on mac in you folder and docker container with web server restarts to show local changes.
+Step 3 above - this is important if you want it to monitor file changes for local development. You save you file on mac in you folder and docker container with web server restarts to show local changes.
 
 You might want to "npm install supervisor -g" so you can run it local with "npm start"
 
