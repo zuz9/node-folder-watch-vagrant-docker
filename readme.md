@@ -28,12 +28,17 @@ docker run --name dev -it -p 3000:3000 -v '/vagrant:/project' zuz9/node-folder-w
 
 curl localhost:3000 # verify it is working
 
-docker exec -it dev bash # enter container to see what is happening
 
-###build and push to docker hub for Alex's use only :) ###
+
+### Misc commands for working with this docker container ###
+
+**build and push to docker hub for Alex's use only :)**
 
 1. vagrant ssh
 2. cd /vagrant
 3. docker build -t zuz9/node-folder-watch .
 4. docker login --username zuz9 --email
 5. docker push zuz9/node-folder-watch
+6. docker kill dev
+7. docker rm dev
+8. docker exec -it dev bash # enter container to see what is happening
