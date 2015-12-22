@@ -1,0 +1,3 @@
+This project use the docker node image as the base for NodeJS development on local machine.
+
+vagrant up will start a docker container running forever watching for changes.  Just place this vagrant file in your current project root and you must have server.js as your entry point.  You can change this by changing the docker file and creating a new image and referencing this new image in the vagrant file.
