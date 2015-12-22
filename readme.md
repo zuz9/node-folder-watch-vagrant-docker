@@ -7,11 +7,13 @@ You must install vagrant https://www.vagrantup.com/
 ###Instructions###
 
 1. Just copy this vagrant file in your current project root 
-2. Make sure your package.json file has this "start": "supervisor server.js"
-3. your project runs in port 3000
+2. Make sure your package.json file has this "start": "supervisor server.js" * (see info below)
+3. your node project runs in port 3000
 
 
 ###Notes###
+
+* step 2 above - this is important if you want it to monitor file changes for local development. You save you file on mac in you folder and docker container with web server restarts to show local changes.
 
 You might want to "npm install supervisor -g" so you can run it local with "npm start"
 
